@@ -1,0 +1,142 @@
+* {
+  box-sizing: border-box;
+}
+
+body{
+  color: #C2C2C2;
+  background-color: #F1F1F1;
+  font-family: Arial, sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+.container{
+  width: 1024px;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.serch-wrap{
+  height: 100px;
+  margin: 50px 0 10px;
+  font-size: 0;
+}
+
+.search-input{
+  background-color: transparent;
+  display: inline-block;
+  width: calc(100% - 100px);
+  height: 100%;
+  border: none;
+  outline: none;
+  font-size: 80px;
+  font-weight: 700;
+}
+ .search-input:focus, .search-input:active{
+ outline:none;
+ background: rgba(118,117,128,0.05);
+ font-size: 80px;
+ font-weight: 700;
+ color: #ec5a62;
+
+}
+
+::-webkit-input-placeholder{
+  color: #C2C2C2;
+  letter-spacing: 0.125em;
+}
+
+.search-input:focus::-webkit-input-placeholder {
+ color:transparent;
+ }
+
+.search-button{
+  display: inline-block;
+  vertical-align: bottom;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  width: 100px;
+  height: 100%;
+  background-color: transparent;
+  background-image: url('https://png.pngtree.com/svg/20170609/37d8d2ce9e.svg');
+  background-size: contain;
+}
+
+.content-wrap{
+  font-size: 0;
+}
+
+.list-wrap{
+  width: 33%;
+  display: inline-block;
+  padding: 0 25px 0 0;
+}
+
+.list-wrap:last-child{
+  padding: 0;
+}
+
+.list-header{
+  font-size: 32px;
+  text-transform: uppercase;
+}
+
+.list-body{
+  list-style: none;
+  padding-left: 0;
+}
+
+.list-item{
+  margin-bottom: 10px;
+}
+
+.list-item a{
+  display: inline-block;
+  width: 100%;
+  text-decoration: none;
+  padding: 10px;
+  font-size: 16px;
+  background-color: rgba(118,117,128,0.05);
+
+}
+#circul {
+  border-radius: 50%;
+
+  }
+
+.list-item img{
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  border-radius: 0%;
+  font-size: 50px;
+}
+
+
+.list-item .list-element-text{
+  color: #ACACAE;
+  display: inline-block;
+  width: calc(100% - 55px);
+  height: 50px;
+  vertical-align: top;
+  line-height: 50px;
+  padding-left: 10px;
+  font-weight: 700;
+}
+
+.list-item a:hover{
+  background-color: rgba(118,117,128,0.1);
+}
+
+.list-item a:hover .list-element-text{
+  color: #ec5a62;
+}
+
+.list-item a:active{
+  background-color: rgba(118,117,128,0.15);
+}
+
+.list-item a:active .list-element-text{
+  font-size: 1.1em;
+}
